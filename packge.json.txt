@@ -1,0 +1,25 @@
+{
+
+  "name": "Example",
+
+  "description": "Example",
+
+  "version": "0.0.0",
+
+  "main": "onepicebot.js",
+
+  "scripts": {
+
+    "start": "node onepicebot.js"
+
+  },
+
+  "dependencies": {
+
+    "discord.js": "11.1.0",
+
+    "request": "2.81.0"
+
+  }
+
+}

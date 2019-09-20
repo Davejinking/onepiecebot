@@ -1,7 +1,6 @@
-const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const { Client, Attachment } = require('discord.js');
 const client = new Discord.Client();
-const somelib = require('./Manager.js');
 
 
 client.on('ready', () => {
@@ -42,8 +41,6 @@ client.on('message', msg => {
 
   // 원랜디 흔한조합식
   if (msg.content === '!히든') {
-    // URL에있는사진을 보여줄때
-    // msg.channel.send("My Bot's message", {files: ["https://source.unsplash.com/random"]});
     msg.reply('\n피셔타이거\n반더데켄\n이완코브\n킨에몬\n사보\n레베카\n코알라\n캐럿\n \n아카이누\n아오키지\n베르고\n \n검호 미호크\n킬러\n봉쿠레\n류마\n시류\n페로나\n \n써니호\n모비딕호\n발라티에\n방주맥심\n레드포스호');
   } else if (msg.content === '!초월') {
     msg.reply('\n루피\n조로\n나미\n우솝\n상디\n쵸파\n로빈\n프랑키\n브룩\n시라호시\n아카이누\n아오키지\n키자루\n검은수염\n샹크스\n로우\n도플라밍고\n사보\n후지토라\n타시기\n빅맘\n루치');
@@ -124,4 +121,5 @@ client.on('message', msg => {
   // 히든 해적
 });
 
-client.login('NjIyODM0OTY2Mjc0NzY4OTA1.XX5qkg.agRbTA4W-T4PXB3PT6TUfXU43iQ');
+client.login(process.env.BOT_TOKEN);
+
